@@ -31,12 +31,15 @@ const getWeather = (city) => {
     .catch((err) => console.error(err));
 };
 
+
 submit.addEventListener("click", (e) => {
   e.preventDefault();
   getWeather(city.value);
 });
 
+
 getWeather("Kolkata");
+
 
 const func = (city) => {
   const cityName = document.getElementById("cityName");
@@ -61,4 +64,4 @@ func("Kolkata");
 func("Mumbai");
 func("Bangalore");
 func("Chennai");
-func("Pune");
+func("Delhi");
